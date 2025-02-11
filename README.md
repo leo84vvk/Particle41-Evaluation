@@ -44,7 +44,7 @@ Ensure you have the following installed:
 1.  Run the Docker container:
 
     ```bash
-    docker run -p 8000:8000 simple-time-service:<version>
+    docker run -d -p 8000:8000 simple-time-service:<version>
     ```
     This command runs the container and maps port 8000 on your host machine to port 8000 inside the container. If your application uses a different port, adjust accordingly.
 
