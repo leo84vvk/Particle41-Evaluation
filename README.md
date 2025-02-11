@@ -21,7 +21,6 @@ SimpleTimeService is a minimalist web service that returns the current timestamp
 
 Ensure you have the following installed:
 
-*   Python 3.11
 *   Docker
 
 ### Building the Docker Image
