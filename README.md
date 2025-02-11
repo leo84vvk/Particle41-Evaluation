@@ -28,23 +28,23 @@ Ensure you have the following installed:
 1.  Clone this repository:
 
     ```bash
-    git clone <repository_url>
-    cd SimpleTimeService  # Go to the project directory
+    git clone <repository_url> # you can find it in the git repo clone option
+    cd Particle41-Evaluation  # Go to the project directory
     ```
 
 2.  Build the Docker image:
 
     ```bash
-    docker build -t simple-time-service:latest .
+    docker build -t simple-time-service:v01.001 . #make sure to update the image version with each build
     ```
-    This command builds the image and tags it as `simple-time-service:latest`. The `.` specifies the build context (the current directory).
+    This command builds the image and tags it as `simple-time-service:<version>`. The `.` specifies the build context (the current directory).The build version will keep track of the each version updates.
 
 ### Running the Docker Container
 
 1.  Run the Docker container:
 
     ```bash
-    docker run -p 8000:8000 simple-time-service:latest
+    docker run -p 8000:8000 simple-time-service:<version>
     ```
     This command runs the container and maps port 8000 on your host machine to port 8000 inside the container. If your application uses a different port, adjust accordingly.
 
